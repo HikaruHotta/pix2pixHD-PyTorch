@@ -1,0 +1,11 @@
+python -m run_scripts.train_cityscapes_ColabPix2PixHDConfig \
+    --save_dir checkpoints/ \
+    --data_dir datasets/ \
+    --n_classes 35 \
+    --n_channels 3 \
+    --batch_size_1 1 \
+    --batch_size_2 1 \
+    --epochs_1 0 \
+    --epochs_2 1\
+    --learning_rate 0.0002 \
+    --decay_after 10
